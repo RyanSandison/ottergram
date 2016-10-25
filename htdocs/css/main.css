@@ -1,0 +1,26 @@
+body{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.h1Title {
+    font-family: 'Playball', cursive;
+    padding-bottom:5px;
+    padding-left: 5px;
+    margin: 0;
+}
+
+.nav{
+  background-color: grey;
+  padding:0;
+  margin:0;
+}
+.nav ul{
+  padding-left: 5px;
+  margin: 0;
+}
+.nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 5px
+}
