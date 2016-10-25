@@ -2,6 +2,9 @@
   font-family: 'Shrikhand', cursive;
   font-size: 20px
 }
+.titlefont{
+    font-family: 'Shrikhand', cursive;
+}
 .wrapper{
   width:100%;
   max-width: 1280px;
