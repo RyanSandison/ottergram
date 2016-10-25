@@ -8,6 +8,7 @@ body{
     padding-bottom:5px;
     padding-left: 5px;
     margin: 0;
+    font-size: 48px;
 }
 
 .nav{
@@ -23,8 +24,23 @@ body{
   list-style: none;
   display: inline-block;
   margin: 5px;
+  font-size: 18px
 }
 .nav ul li a{
   text-decoration: none;
   color: black;
+}
+
+body{
+  font-size: 18px;
+  background: rgb(149, 194, 215);
+}
+a{
+  text-decoration: none;
+}
+.thumbnail-item{
+  border: 1px solid rgba(100%, 100%, 100%, 0.8);
+  border-color: grey
+}
+.thumbnail-title{
 }
