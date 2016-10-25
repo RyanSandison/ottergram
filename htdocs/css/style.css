@@ -1,0 +1,121 @@
+*{
+  font-family: 'Shrikhand', cursive;
+  font-size: 20px
+}
+.wrapper{
+  width:100%;
+  max-width: 1280px;
+  margin:0 auto;
+}
+body{
+  background-color: #eee;
+  margin: 0;
+}
+nav{
+  background-color: white;
+}
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+}
+nav a{
+  text-decoration: none;
+  text-align: center;
+  color: grey;
+  display: block;
+  padding: 10px
+}
+nav a:hover{
+  background-color: #444;
+}
+a.fb{
+  background: url(../img/fb.png) no-repeat center;
+  background-size:80%;
+  width: 20px
+}
+a.twitter{
+  background: url(../img/tw.png) no-repeat center;
+  background-size: 80%;
+  width: 20px
+}
+.social a{
+  text-indent: -10000px;
+}
+.social{
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+nav ul.social{
+  flex: 1 1 0;
+  display: flex;
+}
+nav ul.social li{
+  flex: 1 1 0
+}
+.title{
+  color: grey;
+}
+
+.title{
+  display: flex;
+  color: grey;
+  flex: 1 1 0;
+  justify-content:center;;
+  margin: 0;
+}
+#blocks{
+  margin:20px
+}
+article{
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+article h2{
+  text-align: center;
+  margin: 10px 0;
+  color: grey;
+}
+article p{
+  font-size: 16px;
+  color: grey;
+}
+article img{
+width: 100%;
+height: auto;
+}
+article p.description{
+  text-align: center;
+  padding: 1px
+}
+
+
+/*flex styling only*/
+@media screen and (min-width:768px) {
+  nav ul{
+    display: flex;
+  }
+  nav li{
+    flex:1 0 1;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .social{
+    margin: 0;
+  }
+  #blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  article{
+    flex: 1 1 31%;
+    margin: 1%
+  }
+
+}
