@@ -14,8 +14,10 @@ body{
   background-color: #eee;
   margin: 0;
 }
+/*Nav related content*/
 nav{
   background-color: white;
+  box-shadow: 1px 1px 4px #aaa;
 }
 nav ul{
   list-style-type: none;
@@ -30,7 +32,11 @@ nav a{
   padding: 10px
 }
 nav a:hover{
-  background-color: #444;
+  background-color: #333;
+  border-radius: 10px 10px 0 0;
+}
+nav ul li a.title:hover{
+  background-color: white;
 }
 a.fb{
   background: url(../img/fb.png) no-repeat center;
@@ -68,14 +74,30 @@ nav ul.social li{
   justify-content:center;;
   margin: 0;
 }
+/*End of Nav*/
+/*Page related*/
 #blocks{
   margin:20px
+}
+#About-blocks{
+  margin:20px;
 }
 article{
   background-color: #fff;
   margin-bottom: 20px;
   padding: 10px;
   box-sizing: border-box;
+}
+article.About-item{
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+article.About h1{
+  text-align: center;
+  margin: 10px 0;
+  color: grey;
 }
 article h2{
   text-align: center;
@@ -92,9 +114,8 @@ height: auto;
 }
 article p.description{
   text-align: center;
-  padding: 1px
+  padding: 1px;
 }
-
 
 /*flex styling only*/
 @media screen and (min-width:768px) {
@@ -116,8 +137,17 @@ article p.description{
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  #About-blocks{
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: space-between;
+  }
   article{
     flex: 1 1 31%;
+    margin: 1%
+  }
+  article.About-item{
+    flex: 1 1 48%;
     margin: 1%
   }
 
